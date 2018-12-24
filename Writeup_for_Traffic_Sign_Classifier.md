@@ -302,4 +302,9 @@ For the fifth image, the model is relatively sure that this is a Children crossi
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
+#### References Used :
+For implementing L2 Regularization using TensorFlow
+https://www.ritchieng.com/machine-learning/deep-learning/tensorflow/regularization/
+
+
 
