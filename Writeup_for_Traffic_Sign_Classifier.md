@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/Test_Samples_Histogram.PNG "Visualization Of Test Samples"
+[image1]: ./examples/Training_Sample_Histogram.PNG "Visualization Of Training Samples"
 [image2]: ./examples/Validation_Sample_Histogram.PNG "Visualization Of Validation Samples"
 [image3]: ./examples/Test_Samples_Histogram.PNG "Visualization Of Test Samples"
 [image4]: ./examples/Sample_Training_Images.PNG "Sample Training Images"
@@ -36,7 +36,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](https://github.com/LakshmiPrasannan/Traffic_Sign_Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -90,11 +90,11 @@ So hence I realized it would be ideal to bring all the images to uniform pixel i
 
 My final model consisted of the following layers:
 
-| Layer    5 Layes    		|     Description	        					| 
+| Layer    5 Layes 		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
 | Convolution 3x3     	| 1x1 stride, same padding, outputs 28x28x6 	|
-| RELU					|												|
+| Activation 			| ReLU      									|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x6 				    |
 | Convolution 3x3	    | 5 Layes , output = 43.   					    |
 | Fully connected		| Yes        									|
@@ -212,9 +212,14 @@ As traffic signs were images provided on various shapes of sign boards a general
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image5] ![alt text][image6] ![alt text][image7] 
-![alt text][image8] ![alt text][image9]
+![alt text][image5] 
+![alt text][image6] 
+![alt text][image7] 
+![alt text][image8] 
+![alt text][image9]
 
+
+These images are resized to match their size of 32x32x3.
 The second image might be difficult to classify because the count of samples of Slippery Roads are very less in the testing samples, hence they are often detected as General Caution or Speed sign's images whose count is considerably higher than slipper roads in the testing sample.
 
 
